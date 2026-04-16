@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Collecte de feedback — entre le form et l'interview</title>
-  <meta name="description" content="Explorer l'espace entre un Google Form froid et une interview chronophage." />
+  <title>Collecte de feedback — entre le formulaire et l'interview</title>
+  <meta name="description" content="Explorer l'espace entre un formulaire basique et une interview chronophage." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -15,7 +15,7 @@
     <div class="container">
       <a class="back" href="../../index.html">← Accueil</a>
       <p class="eyebrow" style="margin-top: 32px;">Présentation</p>
-      <h1>Entre le form<br />et l'interview</h1>
+      <h1>Entre le formulaire<br />et l'interview</h1>
       <p class="lead">Trouver un format de feedback qui engage sans épuiser.</p>
     </div>
   </header>
@@ -33,7 +33,7 @@
           <div class="score-card score-card--form">
             <div class="score-card__head">
               <span class="score-card__pill">Extrême 1</span>
-              <h3 class="score-card__name">Google Form</h3>
+              <h3 class="score-card__name">Formulaire basique</h3>
             </div>
             <div class="score-row">
               <span class="score-row__label">Scalabilité</span>
@@ -84,12 +84,12 @@
       <div class="container">
         <span class="section__num">02 — l'entre-deux</span>
         <h2>Il manque un format au milieu</h2>
-        <p class="section__intro">Garder la scalabilité du form, l'humain de l'interview.</p>
+        <p class="section__intro">Garder la scalabilité du formulaire, l'humain de l'interview.</p>
 
         <div class="spectrum2">
           <div class="sp">
             <div class="sp__mark">— extrême —</div>
-            <div class="sp__name">Form</div>
+            <div class="sp__name">Formulaire</div>
             <p class="sp__desc">Scalable mais désincarné.</p>
           </div>
           <div class="sp sp--mid">
@@ -137,7 +137,7 @@
 
         <div class="market">
           <h3 class="market__title">Ce que propose le marché</h3>
-          <p class="market__intro">Les outils ne couvrent pas le même moment ni la même profondeur. Chacun se positionne sur l'axe friction ↔ profondeur.</p>
+          <p class="market__intro">Six familles d'outils se partagent le spectre — du poll en 1 clic à la plateforme enterprise. Chacune avec une approche différente, un modèle économique et un statut open source / closed source.</p>
 
           <div class="axis-tools">
             <div class="axis-tools__ends">
@@ -145,67 +145,152 @@
               <span>Profond · Enterprise</span>
             </div>
             <div class="axis-tools__rail">
-              <div class="axis-tools__dot" style="left:10%"></div>
-              <div class="axis-tools__dot" style="left:30%"></div>
-              <div class="axis-tools__dot" style="left:50%"></div>
-              <div class="axis-tools__dot" style="left:70%"></div>
-              <div class="axis-tools__dot" style="left:90%"></div>
+              <div class="axis-tools__dot" style="left:8%"></div>
+              <div class="axis-tools__dot" style="left:25%"></div>
+              <div class="axis-tools__dot" style="left:42%"></div>
+              <div class="axis-tools__dot" style="left:58%"></div>
+              <div class="axis-tools__dot" style="left:75%"></div>
+              <div class="axis-tools__dot" style="left:92%"></div>
             </div>
             <div class="axis-tools__row">
+
               <div class="tool">
                 <div class="tool__origin">Polly Inc · US</div>
                 <h4 class="tool__name">Polly</h4>
                 <span class="tool__family">In-chat polls</span>
-                <p class="tool__desc">Polls natifs dans Slack & Teams. 1 clic, dans le flux. Faible friction, analyse limitée.</p>
+                <p class="tool__desc"><strong>Approche :</strong> rester dans le flux de travail. Polls natifs Slack & Teams, réponse en 1 clic, sans ouvrir d'onglet. Idéal pour un pulse post-réunion.</p>
+                <div class="tool__meta">
+                  <div class="tool__meta-row"><span class="tool__meta-label">Prix</span><span class="tool__meta-value">Free → ~$4/u/mois</span></div>
+                  <div class="tool__meta-row"><span class="tool__meta-label">Code</span><span class="tool__meta-value">Fermé</span></div>
+                </div>
               </div>
+
               <div class="tool">
                 <div class="tool__origin">Cisco · SK</div>
                 <h4 class="tool__name">Slido</h4>
                 <span class="tool__family">Live / Événement</span>
-                <p class="tool__desc">Q&A, polls, word cloud en séance. QR code, sans compte. Capte le feedback à chaud.</p>
+                <p class="tool__desc"><strong>Approche :</strong> capter l'émotion à chaud pendant la séance. Q&A, polls, word cloud via QR code, sans inscription côté participant.</p>
+                <div class="tool__meta">
+                  <div class="tool__meta-row"><span class="tool__meta-label">Prix</span><span class="tool__meta-value">Free → ~$15/mois</span></div>
+                  <div class="tool__meta-row"><span class="tool__meta-label">Code</span><span class="tool__meta-value">Fermé</span></div>
+                </div>
               </div>
+
               <div class="tool">
                 <div class="tool__origin">Typeform · ES</div>
                 <h4 class="tool__name">Typeform</h4>
                 <span class="tool__family">Survey conversationnel</span>
-                <p class="tool__desc">Forms élégants, une question à la fois. IA qui résume les verbatims et sort les thèmes.</p>
+                <p class="tool__desc"><strong>Approche :</strong> transformer le sondage en conversation — une question à la fois, animations fluides. IA pour résumer les verbatims, détecter thèmes & sentiment.</p>
+                <div class="tool__meta">
+                  <div class="tool__meta-row"><span class="tool__meta-label">Prix</span><span class="tool__meta-value">$29 → $99/mois</span></div>
+                  <div class="tool__meta-row"><span class="tool__meta-label">Code</span><span class="tool__meta-value">Fermé</span></div>
+                </div>
               </div>
+
               <div class="tool">
-                <div class="tool__origin">SurveyMonkey · US</div>
-                <h4 class="tool__name">SurveyMonkey</h4>
-                <span class="tool__family">Survey + IA</span>
-                <p class="tool__desc">Surveys classiques enrichis : résumé, sentiment, détection de réponses bâclées, intégrations CRM.</p>
+                <div class="tool__origin">Sprig · US</div>
+                <h4 class="tool__name">Sprig</h4>
+                <span class="tool__family">In-product · IA</span>
+                <p class="tool__desc"><strong>Approche :</strong> poser la bonne question au bon moment dans le produit. Session replay, analyse IA, synthèse cross-études. Pas à froid par mail.</p>
+                <div class="tool__meta">
+                  <div class="tool__meta-row"><span class="tool__meta-label">Prix</span><span class="tool__meta-value">Free → $175+/mois</span></div>
+                  <div class="tool__meta-row"><span class="tool__meta-label">Code</span><span class="tool__meta-value">Fermé</span></div>
+                </div>
               </div>
+
+              <div class="tool">
+                <div class="tool__origin">Formbricks · DE</div>
+                <h4 class="tool__name">Formbricks</h4>
+                <span class="tool__family">Open source moderne</span>
+                <p class="tool__desc"><strong>Approche :</strong> alternative open source à Typeform, Qualtrics et Sprig. Self-hostable en Docker, aucune limite, données chez vous.</p>
+                <div class="tool__meta">
+                  <div class="tool__meta-row"><span class="tool__meta-label">Prix</span><span class="tool__meta-value">Self-host gratuit · Cloud $199+</span></div>
+                  <div class="tool__meta-row"><span class="tool__meta-label">Code</span><span class="tool__meta-value tool__meta-value--oss">Open source</span></div>
+                </div>
+              </div>
+
               <div class="tool">
                 <div class="tool__origin">Qualtrics · US</div>
                 <h4 class="tool__name">Qualtrics</h4>
                 <span class="tool__family">Enterprise XM</span>
-                <p class="tool__desc">Plateforme XM. Text iQ pour analyse profonde, routage CRM, gouvernance, SSO.</p>
+                <p class="tool__desc"><strong>Approche :</strong> industrialiser le feedback à l'échelle. Text iQ pour analyse des verbatims, routage CRM, SSO, gouvernance, conformité.</p>
+                <div class="tool__meta">
+                  <div class="tool__meta-row"><span class="tool__meta-label">Prix</span><span class="tool__meta-value">Sur devis (~$1500+/mois)</span></div>
+                  <div class="tool__meta-row"><span class="tool__meta-label">Code</span><span class="tool__meta-value">Fermé</span></div>
+                </div>
               </div>
+
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ========== 04 — Hand-made ========== -->
+    <!-- ========== 04 — Pistes ========== -->
     <section class="section">
       <div class="container">
-        <span class="section__num">04 — hand-made</span>
-        <h2>Les idées qu'on pourrait explorer</h2>
-        <p class="section__intro">Des pistes à piocher et combiner.</p>
+        <span class="section__num">04 — pistes</span>
+        <h2>Engager l'utilisateur</h2>
+        <p class="section__intro">Notre maillon faible, c'est la personne qui répond. Trois leviers connus — appuyés par la recherche.</p>
 
-        <div class="bubbles">
-          <div class="bubble bubble--red   bubble--xl b1">Agent<br />conversationnel</div>
-          <div class="bubble bubble--red   bubble--lg b2">Feedback<br />vocal</div>
-          <div class="bubble bubble--teal  bubble--xl b3">Form<br />auto-généré</div>
-          <div class="bubble bubble--brown bubble--lg b4">Feedback<br />vidéo</div>
-          <div class="bubble bubble--light bubble--md b5">Feedback<br />écrit</div>
-          <div class="bubble bubble--cream bubble--md b6">QR en<br />séance</div>
-          <div class="bubble bubble--light bubble--md b7">Résumé IA</div>
-          <div class="bubble bubble--red   bubble--sm b8">Emojis</div>
-          <div class="bubble bubble--teal  bubble--lg b9">Gamification</div>
-          <div class="bubble bubble--cream bubble--sm b10">Stop<br />Continue<br />Start</div>
+        <div class="levers">
+          <article class="lever">
+            <div class="lever__num">1</div>
+            <h3 class="lever__title">Personnalisation contextuelle</h3>
+            <p class="lever__desc">Le feedback doit parler directement à la personne et à son expérience. Pas un mail générique envoyé à 200 personnes.</p>
+            <span class="lever__cite">
+              <strong>Étude</strong>
+              Dillman, <em>Tailored Design Method</em> : la personnalisation des invitations booste le taux de réponse de 5 à 11 %. Études récentes : jusqu'à +48 % de probabilité de répondre.
+            </span>
+          </article>
+
+          <article class="lever">
+            <div class="lever__num">2</div>
+            <h3 class="lever__title">Simplicité</h3>
+            <p class="lever__desc">Une question à la fois, 60 secondes max. Pas chiant. Chaque question en trop fait fuir un répondant.</p>
+            <span class="lever__cite">
+              <strong>Étude</strong>
+              Galesic &amp; Bošnjak (<em>Public Opinion Quarterly</em>, 2009) : plus la durée annoncée est longue, moins les gens démarrent — et les réponses deviennent plus courtes et plus bâclées.
+            </span>
+          </article>
+
+          <article class="lever">
+            <div class="lever__num">3</div>
+            <h3 class="lever__title">Prise par la main</h3>
+            <p class="lever__desc">Ne pas être perdu dans un mail ou un lien orphelin. Un chemin clair, un guide qui accompagne pas à pas.</p>
+            <span class="lever__cite">
+              <strong>Étude</strong>
+              Xiao et al. (ACM TiiS, 2020) : les surveys conversationnels (chatbot) obtiennent un engagement significativement plus élevé et des verbatims de meilleure qualité que les web forms.
+            </span>
+          </article>
+        </div>
+
+        <h3 class="subhead">Ce qu'on doit tester côté utilisateur</h3>
+        <p class="subintro">On ne sait pas encore ce que <em>notre</em> public préfère. À confronter à des pilotes.</p>
+
+        <div class="prefs">
+          <div class="pref">Parler à un chat</div>
+          <div class="pref">Répondre en texte libre</div>
+          <div class="pref">Envoyer un vocal</div>
+          <div class="pref">Un retour vidéo</div>
+          <div class="pref">Cliquer un mail</div>
+          <div class="pref pref--accent">Juste après l'événement</div>
+          <div class="pref pref--accent">Plus tard, à tête reposée</div>
+          <div class="pref pref--accent">Court · 30 secondes</div>
+          <div class="pref pref--accent">Approfondi · 5 minutes</div>
+        </div>
+
+        <div class="secondary">
+          <div class="sec">
+            <div class="sec__label">Créateur · piste secondaire</div>
+            <h3 class="sec__title">Prompt → Form</h3>
+            <p class="sec__desc">Un outil qui génère le formulaire contextualisé depuis un prompt. Aide le créateur à bien cadrer, sans partir d'une page blanche.</p>
+          </div>
+          <div class="sec sec--faded">
+            <div class="sec__label">Résultats · piste secondaire <span class="sec__tag">faible valeur</span></div>
+            <h3 class="sec__title">Consolidation auto</h3>
+            <p class="sec__desc">Un LLM règle déjà la synthèse en deux deux. Problème quasi résolu — à garder en tête mais pas prioritaire.</p>
+          </div>
         </div>
       </div>
     </section>
