@@ -637,57 +637,6 @@ h3 { font-size: 16px; margin: 0 0 8px; font-weight: 600; }
 .dimension:nth-child(2) .dimension__q { color: var(--brown); }
 .dimension:nth-child(3) .dimension__q { color: var(--teal); }
 
-/* Secondary axes */
-.secondary {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
-  padding-top: 56px;
-  border-top: 1px solid var(--border);
-}
-
-.sec {
-  padding: 28px;
-  background: var(--bg-2);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-}
-.sec--faded { opacity: 0.6; }
-
-.sec__label {
-  font-size: 10px;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: var(--red);
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-.sec--faded .sec__label { color: var(--brown); }
-
-.sec__title {
-  font-family: var(--serif);
-  font-size: 22px;
-  margin: 0 0 10px;
-  font-weight: 500;
-}
-.sec__desc {
-  color: var(--text-dim);
-  font-size: 14px;
-  margin: 0;
-  line-height: 1.5;
-}
-.sec__tag {
-  display: inline-block;
-  margin-left: 8px;
-  font-size: 10px;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--red);
-  font-style: normal;
-  font-family: var(--font);
-  font-weight: 600;
-}
-
 /* ---------- Footer ---------- */
 .footer {
   padding: 40px 0;
@@ -713,5 +662,4 @@ h3 { font-size: 16px; margin: 0 0 8px; font-weight: 600; }
   .axis-tools__row { grid-template-columns: 1fr 1fr; }
   .levers { grid-template-columns: 1fr; }
   .dimensions { grid-template-columns: 1fr; }
-  .secondary { grid-template-columns: 1fr; }
 }
