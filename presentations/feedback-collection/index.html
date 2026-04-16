@@ -27,34 +27,53 @@
       <div class="container">
         <span class="section__num">01 — les deux extrêmes</span>
         <h2>Aujourd'hui, on choisit entre deux formats</h2>
+        <p class="section__intro">Chacun a ses forces et ses faiblesses.</p>
 
-        <div class="frieze2">
-          <div class="fend fend--form">
-            <div class="fend__circle">F</div>
-            <div class="fend__tag">Extrême 1</div>
-            <h3 class="fend__name">Google Form</h3>
-            <p class="fend__pain">Peu engageant.</p>
+        <div class="score-cards">
+          <div class="score-card score-card--form">
+            <div class="score-card__head">
+              <span class="score-card__pill">Extrême 1</span>
+              <h3 class="score-card__name">Google Form</h3>
+            </div>
+            <div class="score-row">
+              <span class="score-row__label">Scalabilité</span>
+              <div class="score-row__bar"><span class="score-row__fill score-row__fill--high" style="width:92%"></span></div>
+              <span class="score-row__mark score-row__mark--high">fort</span>
+            </div>
+            <div class="score-row">
+              <span class="score-row__label">Engagement</span>
+              <div class="score-row__bar"><span class="score-row__fill score-row__fill--low" style="width:15%"></span></div>
+              <span class="score-row__mark score-row__mark--low">faible</span>
+            </div>
+            <div class="score-row">
+              <span class="score-row__label">Profondeur</span>
+              <div class="score-row__bar"><span class="score-row__fill score-row__fill--low" style="width:18%"></span></div>
+              <span class="score-row__mark score-row__mark--low">faible</span>
+            </div>
+            <p class="score-card__note">Facile à envoyer. Mais froid — peu de gens répondent.</p>
           </div>
-          <div class="fend fend--interview">
-            <div class="fend__circle">I</div>
-            <div class="fend__tag">Extrême 2</div>
-            <h3 class="fend__name">Interview</h3>
-            <p class="fend__pain">Très coûteux.</p>
-          </div>
-        </div>
 
-        <div class="frieze-axes">
-          <div class="axis">
-            <div class="axis__label">Engagement</div>
-            <div class="axis__row"><span class="low">faible</span><span class="axis__bar"></span><span class="high">fort</span></div>
-          </div>
-          <div class="axis">
-            <div class="axis__label">Effort requis</div>
-            <div class="axis__row"><span class="low">léger</span><span class="axis__bar"></span><span class="high">lourd</span></div>
-          </div>
-          <div class="axis">
-            <div class="axis__label">Passage à l'échelle</div>
-            <div class="axis__row"><span class="high" style="color:var(--teal)">facile</span><span class="axis__bar" style="background:linear-gradient(90deg,var(--teal),var(--red))"></span><span class="low">difficile</span></div>
+          <div class="score-card score-card--interview">
+            <div class="score-card__head">
+              <span class="score-card__pill">Extrême 2</span>
+              <h3 class="score-card__name">Interview</h3>
+            </div>
+            <div class="score-row">
+              <span class="score-row__label">Scalabilité</span>
+              <div class="score-row__bar"><span class="score-row__fill score-row__fill--low" style="width:15%"></span></div>
+              <span class="score-row__mark score-row__mark--low">faible</span>
+            </div>
+            <div class="score-row">
+              <span class="score-row__label">Engagement</span>
+              <div class="score-row__bar"><span class="score-row__fill score-row__fill--high" style="width:95%"></span></div>
+              <span class="score-row__mark score-row__mark--high">fort</span>
+            </div>
+            <div class="score-row">
+              <span class="score-row__label">Profondeur</span>
+              <div class="score-row__bar"><span class="score-row__fill score-row__fill--high" style="width:92%"></span></div>
+              <span class="score-row__mark score-row__mark--high">fort</span>
+            </div>
+            <p class="score-card__note">Riche et humain. Mais coûteux — impossible à l'échelle.</p>
           </div>
         </div>
       </div>
@@ -93,7 +112,7 @@
         <span class="section__num">03 — analyse</span>
         <h2>Un feedback, trois axes</h2>
         <p class="section__intro">
-          Tout système de feedback repose sur trois rôles.
+          Tout système repose sur trois rôles.
           On se concentre sur celui du milieu : <strong>donner envie de répondre.</strong>
         </p>
 
@@ -118,13 +137,52 @@
 
         <div class="market">
           <h3 class="market__title">Ce que propose le marché</h3>
-          <p class="market__intro">Chaque outil couvre une partie du spectre — aucun ne le couvre entièrement.</p>
-          <div class="market__row">
-            <div class="mkt"><div class="mkt__tag">Enterprise</div><p class="mkt__name">Qualtrics · Medallia</p></div>
-            <div class="mkt"><div class="mkt__tag">Survey + IA</div><p class="mkt__name">Typeform · SurveyMonkey</p></div>
-            <div class="mkt"><div class="mkt__tag">Live</div><p class="mkt__name">Slido · Mentimeter</p></div>
-            <div class="mkt"><div class="mkt__tag">In-chat</div><p class="mkt__name">Polly</p></div>
-            <div class="mkt"><div class="mkt__tag">Open source</div><p class="mkt__name">LimeSurvey</p></div>
+          <p class="market__intro">Les outils ne couvrent pas le même moment ni la même profondeur. Chacun se positionne sur l'axe friction ↔ profondeur.</p>
+
+          <div class="axis-tools">
+            <div class="axis-tools__ends">
+              <span>Léger · 1 clic</span>
+              <span>Profond · Enterprise</span>
+            </div>
+            <div class="axis-tools__rail">
+              <div class="axis-tools__dot" style="left:10%"></div>
+              <div class="axis-tools__dot" style="left:30%"></div>
+              <div class="axis-tools__dot" style="left:50%"></div>
+              <div class="axis-tools__dot" style="left:70%"></div>
+              <div class="axis-tools__dot" style="left:90%"></div>
+            </div>
+            <div class="axis-tools__row">
+              <div class="tool">
+                <div class="tool__origin">Polly Inc · US</div>
+                <h4 class="tool__name">Polly</h4>
+                <span class="tool__family">In-chat polls</span>
+                <p class="tool__desc">Polls natifs dans Slack & Teams. 1 clic, dans le flux. Faible friction, analyse limitée.</p>
+              </div>
+              <div class="tool">
+                <div class="tool__origin">Cisco · SK</div>
+                <h4 class="tool__name">Slido</h4>
+                <span class="tool__family">Live / Événement</span>
+                <p class="tool__desc">Q&A, polls, word cloud en séance. QR code, sans compte. Capte le feedback à chaud.</p>
+              </div>
+              <div class="tool">
+                <div class="tool__origin">Typeform · ES</div>
+                <h4 class="tool__name">Typeform</h4>
+                <span class="tool__family">Survey conversationnel</span>
+                <p class="tool__desc">Forms élégants, une question à la fois. IA qui résume les verbatims et sort les thèmes.</p>
+              </div>
+              <div class="tool">
+                <div class="tool__origin">SurveyMonkey · US</div>
+                <h4 class="tool__name">SurveyMonkey</h4>
+                <span class="tool__family">Survey + IA</span>
+                <p class="tool__desc">Surveys classiques enrichis : résumé, sentiment, détection de réponses bâclées, intégrations CRM.</p>
+              </div>
+              <div class="tool">
+                <div class="tool__origin">Qualtrics · US</div>
+                <h4 class="tool__name">Qualtrics</h4>
+                <span class="tool__family">Enterprise XM</span>
+                <p class="tool__desc">Plateforme XM. Text iQ pour analyse profonde, routage CRM, gouvernance, SSO.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -135,19 +193,19 @@
       <div class="container">
         <span class="section__num">04 — hand-made</span>
         <h2>Les idées qu'on pourrait explorer</h2>
-        <p class="section__intro">Des pistes, à piocher et combiner.</p>
+        <p class="section__intro">Des pistes à piocher et combiner.</p>
 
         <div class="bubbles">
-          <div class="bubble bubble--red   bubble--xl b1">Bot conversationnel</div>
-          <div class="bubble bubble--teal  bubble--md b2">Vocal<br />court</div>
-          <div class="bubble bubble--brown bubble--lg b3">QR<br />en fin de session</div>
-          <div class="bubble bubble--light bubble--md b4">1 emoji<br />= 1 réponse</div>
-          <div class="bubble bubble--cream bubble--lg b5">Sondage<br />dans Teams</div>
-          <div class="bubble bubble--teal  bubble--xl b6">Micro-interview<br />5 min</div>
-          <div class="bubble bubble--red   bubble--sm b7">Slider</div>
-          <div class="bubble bubble--brown bubble--md b8">Stop / Continue<br />Start</div>
-          <div class="bubble bubble--light bubble--sm b9">Gamification</div>
-          <div class="bubble bubble--cream bubble--md b10">Résumé IA<br />public</div>
+          <div class="bubble bubble--red   bubble--xl b1">Agent<br />conversationnel</div>
+          <div class="bubble bubble--red   bubble--lg b2">Feedback<br />vocal</div>
+          <div class="bubble bubble--teal  bubble--xl b3">Form<br />auto-généré</div>
+          <div class="bubble bubble--brown bubble--lg b4">Feedback<br />vidéo</div>
+          <div class="bubble bubble--light bubble--md b5">Feedback<br />écrit</div>
+          <div class="bubble bubble--cream bubble--md b6">QR en<br />séance</div>
+          <div class="bubble bubble--light bubble--md b7">Résumé IA</div>
+          <div class="bubble bubble--red   bubble--sm b8">Emojis</div>
+          <div class="bubble bubble--teal  bubble--lg b9">Gamification</div>
+          <div class="bubble bubble--cream bubble--sm b10">Stop<br />Continue<br />Start</div>
         </div>
       </div>
     </section>
