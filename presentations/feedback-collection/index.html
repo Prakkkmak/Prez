@@ -5,202 +5,153 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Collecte de feedback — entre le form et l'interview</title>
   <meta name="description" content="Explorer l'espace entre un Google Form froid et une interview chronophage." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../../assets/css/style.css" />
 </head>
 <body>
   <header class="hero">
     <div class="container">
-      <a class="back" href="../../index.html">← Toutes les présentations</a>
-      <p class="eyebrow" style="margin-top: 24px;">Présentation · Feedback produit</p>
-      <h1>Entre le Google Form et l'interview</h1>
-      <p class="lead">Comment améliorer la collecte de feedback sans tomber dans les deux extrêmes ?</p>
+      <a class="back" href="../../index.html">← Accueil</a>
+      <p class="eyebrow" style="margin-top: 32px;">Présentation</p>
+      <h1>Entre le form<br />et l'interview</h1>
+      <p class="lead">Trouver un format de feedback qui engage sans épuiser.</p>
     </div>
   </header>
 
   <main>
-    <!-- ========== 1. Frise des extrêmes ========== -->
+
+    <!-- ========== 01 — Les deux extrêmes ========== -->
     <section class="section">
       <div class="container">
-        <span class="section__num">01 — Les deux extrêmes</span>
-        <h2>Aujourd'hui, on oscille entre deux options</h2>
-        <p class="section__intro">Chacune résout un problème… mais en crée un autre.</p>
+        <span class="section__num">01 — les deux extrêmes</span>
+        <h2>Aujourd'hui, on choisit entre deux formats</h2>
 
-        <div class="frieze">
-          <div class="frieze__node frieze__node--form">
-            <div class="frieze__label">Extrême 1</div>
-            <h3 class="frieze__title">Le Google Form</h3>
-            <ul class="frieze__list">
-              <li class="frieze__pro">Rapide à créer et à envoyer</li>
-              <li class="frieze__pro">Passe à l'échelle sans effort</li>
-              <li class="frieze__con">Peu engageant, froid</li>
-              <li class="frieze__con">Taux de réponse faible</li>
-              <li class="frieze__con">Verbatims pauvres ou bâclés</li>
-            </ul>
+        <div class="frieze2">
+          <div class="fend fend--form">
+            <div class="fend__circle">F</div>
+            <div class="fend__tag">Extrême 1</div>
+            <h3 class="fend__name">Google Form</h3>
+            <p class="fend__pain">Peu engageant.</p>
           </div>
-
-          <div class="frieze__axis">
-            <span class="frieze__axis-label">Spectre</span>
-          </div>
-
-          <div class="frieze__node frieze__node--interview">
-            <div class="frieze__label">Extrême 2</div>
-            <h3 class="frieze__title">L'interview</h3>
-            <ul class="frieze__list">
-              <li class="frieze__pro">Riche, nuancé, actionnable</li>
-              <li class="frieze__pro">Relation de confiance</li>
-              <li class="frieze__con">Très chronophage</li>
-              <li class="frieze__con">Demande de la personnalisation</li>
-              <li class="frieze__con">Ne passe pas à l'échelle</li>
-            </ul>
+          <div class="fend fend--interview">
+            <div class="fend__circle">I</div>
+            <div class="fend__tag">Extrême 2</div>
+            <h3 class="fend__name">Interview</h3>
+            <p class="fend__pain">Très coûteux.</p>
           </div>
         </div>
 
-        <div class="frieze__gap">
-          Entre les deux, <strong>un vide</strong> — et c'est là que se joue la bonne approche.
+        <div class="frieze-axes">
+          <div class="axis">
+            <div class="axis__label">Engagement</div>
+            <div class="axis__row"><span class="low">faible</span><span class="axis__bar"></span><span class="high">fort</span></div>
+          </div>
+          <div class="axis">
+            <div class="axis__label">Effort requis</div>
+            <div class="axis__row"><span class="low">léger</span><span class="axis__bar"></span><span class="high">lourd</span></div>
+          </div>
+          <div class="axis">
+            <div class="axis__label">Passage à l'échelle</div>
+            <div class="axis__row"><span class="high" style="color:var(--teal)">facile</span><span class="axis__bar" style="background:linear-gradient(90deg,var(--teal),var(--red))"></span><span class="low">difficile</span></div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- ========== 2. Besoin d'alternative ========== -->
+    <!-- ========== 02 — L'entre-deux ========== -->
     <section class="section">
       <div class="container">
-        <span class="section__num">02 — L'entre-deux</span>
-        <h2>Trouver une alternative au milieu du spectre</h2>
-        <p class="section__intro">Un format qui garde l'engagement de l'interview, la scalabilité du form.</p>
+        <span class="section__num">02 — l'entre-deux</span>
+        <h2>Il manque un format au milieu</h2>
+        <p class="section__intro">Garder la scalabilité du form, l'humain de l'interview.</p>
 
-        <div class="spectrum">
-          <div class="spectrum__item">
-            <div class="spectrum__label">Form</div>
-            <div class="spectrum__value">Scalable</div>
-            <p class="spectrum__desc">Mais désincarné.</p>
+        <div class="spectrum2">
+          <div class="sp">
+            <div class="sp__mark">— extrême —</div>
+            <div class="sp__name">Form</div>
+            <p class="sp__desc">Scalable mais désincarné.</p>
           </div>
-          <div class="spectrum__item spectrum__item--mid">
-            <div class="spectrum__label">Zone à explorer</div>
-            <div class="spectrum__value">Engageant + scalable</div>
-            <p class="spectrum__desc">Court, contextuel, humain, exploitable.</p>
+          <div class="sp sp--mid">
+            <div class="sp__mark">— à explorer —</div>
+            <div class="sp__name">Un format hybride</div>
+            <p class="sp__desc">Court, contextuel, humain.</p>
           </div>
-          <div class="spectrum__item">
-            <div class="spectrum__label">Interview</div>
-            <div class="spectrum__value">Riche</div>
-            <p class="spectrum__desc">Mais trop coûteux.</p>
+          <div class="sp">
+            <div class="sp__mark">— extrême —</div>
+            <div class="sp__name">Interview</div>
+            <p class="sp__desc">Riche mais coûteux.</p>
           </div>
-        </div>
-
-        <div class="pills">
-          <span class="pill">Faible friction</span>
-          <span class="pill">Réponse "à chaud"</span>
-          <span class="pill">Dans le flux de travail</span>
-          <span class="pill">Exploitable rapidement</span>
-          <span class="pill">Anonymat paramétrable</span>
         </div>
       </div>
     </section>
 
-    <!-- ========== 3. Analyse de l'existant / marché ========== -->
+    <!-- ========== 03 — Analyse ========== -->
     <section class="section">
       <div class="container">
-        <span class="section__num">03 — État du marché</span>
-        <h2>Ce qui existe déjà</h2>
-        <p class="section__intro">Cinq familles d'outils couvrent une partie du spectre — chacune avec un compromis.</p>
-
-        <div class="grid">
-          <div class="tile">
-            <div class="tile__icon">XM</div>
-            <h3 class="tile__title">Plateformes enterprise (XM)</h3>
-            <p class="tile__desc">Qualtrics, Medallia — puissant, mais lourd à déployer.</p>
-          </div>
-          <div class="tile">
-            <div class="tile__icon">AI</div>
-            <h3 class="tile__title">Surveys modernes avec IA</h3>
-            <p class="tile__desc">Typeform, SurveyMonkey — belle UX, synthèse automatique.</p>
-          </div>
-          <div class="tile">
-            <div class="tile__icon">◉</div>
-            <h3 class="tile__title">Interaction live</h3>
-            <p class="tile__desc">Slido, Mentimeter, Wooclap — feedback "à chaud" en séance.</p>
-          </div>
-          <div class="tile">
-            <div class="tile__icon">#</div>
-            <h3 class="tile__title">In-chat (Slack / Teams)</h3>
-            <p class="tile__desc">Polly — 1 clic, dans le flux, mais analytics limitée.</p>
-          </div>
-          <div class="tile">
-            <div class="tile__icon">♪</div>
-            <h3 class="tile__title">Voix → texte + NLP</h3>
-            <p class="tile__desc">Transcription Teams, speech analytics — micro-interviews scalables.</p>
-          </div>
-          <div class="tile">
-            <div class="tile__icon">⌂</div>
-            <h3 class="tile__title">Open source / self-host</h3>
-            <p class="tile__desc">LimeSurvey — contrôle, RGPD, hébergement UE.</p>
-          </div>
-        </div>
-
-        <p class="section__intro" style="margin-top: 32px;">
-          <strong>Constat :</strong> aucun outil ne couvre seul toute la zone intermédiaire. Le bon format est souvent une <em>combinaison</em>.
+        <span class="section__num">03 — analyse</span>
+        <h2>Un feedback, trois axes</h2>
+        <p class="section__intro">
+          Tout système de feedback repose sur trois rôles.
+          On se concentre sur celui du milieu : <strong>donner envie de répondre.</strong>
         </p>
-      </div>
-    </section>
 
-    <!-- ========== 4. Approche hand-made ========== -->
-    <section class="section">
-      <div class="container">
-        <span class="section__num">04 — Approche hand-made</span>
-        <h2>Ce qu'on peut construire nous-mêmes</h2>
-        <p class="section__intro">Un triptyque simple : pendant / juste après / à froid.</p>
+        <div class="axes">
+          <div class="ax">
+            <div class="ax__num">1</div>
+            <h3 class="ax__title">Le créateur</h3>
+            <p class="ax__desc">Pose le contexte, formule les bonnes questions.</p>
+          </div>
+          <div class="ax ax--focus">
+            <div class="ax__num">2</div>
+            <h3 class="ax__title">L'utilisateur</h3>
+            <p class="ax__desc">Répond — avec plus ou moins de plaisir.</p>
+            <span class="ax__badge">Notre focus</span>
+          </div>
+          <div class="ax">
+            <div class="ax__num">3</div>
+            <h3 class="ax__title">Les résultats</h3>
+            <p class="ax__desc">Consolidés, lisibles, exploitables.</p>
+          </div>
+        </div>
 
-        <ol class="steps">
-          <li>
-            <h3>Pendant — capter l'émotion à chaud</h3>
-            <p>1 ou 2 questions live, QR code, vote anonyme. Aucun compte, aucune friction.</p>
-          </li>
-          <li>
-            <h3>Juste après — micro-sondage 60 secondes</h3>
-            <p>1 note + 1 question ouverte, envoyé dans Teams/Slack. Synthèse IA automatique.</p>
-          </li>
-          <li>
-            <h3>À froid — micro-interview ciblée</h3>
-            <p>5–7 minutes, échantillon réduit, transcription auto, extraction de thèmes.</p>
-          </li>
-        </ol>
-
-        <div class="pills">
-          <span class="pill">Bot Teams / Slack</span>
-          <span class="pill">Power Automate</span>
-          <span class="pill">LLM pour résumé</span>
-          <span class="pill">Dashboard léger</span>
-          <span class="pill">Digest "vous avez dit / nous avons fait"</span>
+        <div class="market">
+          <h3 class="market__title">Ce que propose le marché</h3>
+          <p class="market__intro">Chaque outil couvre une partie du spectre — aucun ne le couvre entièrement.</p>
+          <div class="market__row">
+            <div class="mkt"><div class="mkt__tag">Enterprise</div><p class="mkt__name">Qualtrics · Medallia</p></div>
+            <div class="mkt"><div class="mkt__tag">Survey + IA</div><p class="mkt__name">Typeform · SurveyMonkey</p></div>
+            <div class="mkt"><div class="mkt__tag">Live</div><p class="mkt__name">Slido · Mentimeter</p></div>
+            <div class="mkt"><div class="mkt__tag">In-chat</div><p class="mkt__name">Polly</p></div>
+            <div class="mkt"><div class="mkt__tag">Open source</div><p class="mkt__name">LimeSurvey</p></div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- ========== 5. Suite ========== -->
+    <!-- ========== 04 — Hand-made ========== -->
     <section class="section">
       <div class="container">
-        <span class="section__num">05 — La suite</span>
-        <h2>Prochaines étapes</h2>
-        <p class="section__intro">Ne pas chercher l'outil parfait — construire la boucle et itérer.</p>
+        <span class="section__num">04 — hand-made</span>
+        <h2>Les idées qu'on pourrait explorer</h2>
+        <p class="section__intro">Des pistes, à piocher et combiner.</p>
 
-        <ol class="steps">
-          <li>
-            <h3>Choisir un pilote</h3>
-            <p>1 type d'événement, 1 équipe volontaire, 1 mois d'essai.</p>
-          </li>
-          <li>
-            <h3>Mesurer ce qui compte</h3>
-            <p>Taux de réponse, qualité des verbatims, time-to-insight, actions livrées.</p>
-          </li>
-          <li>
-            <h3>A/B tester les leviers</h3>
-            <p>Canal, timing, longueur, anonymat, formulation.</p>
-          </li>
-          <li>
-            <h3>Industrialiser ce qui marche</h3>
-            <p>Templates par type d'événement, owner clair, boucle de restitution visible.</p>
-          </li>
-        </ol>
+        <div class="bubbles">
+          <div class="bubble bubble--red   bubble--xl b1">Bot conversationnel</div>
+          <div class="bubble bubble--teal  bubble--md b2">Vocal<br />court</div>
+          <div class="bubble bubble--brown bubble--lg b3">QR<br />en fin de session</div>
+          <div class="bubble bubble--light bubble--md b4">1 emoji<br />= 1 réponse</div>
+          <div class="bubble bubble--cream bubble--lg b5">Sondage<br />dans Teams</div>
+          <div class="bubble bubble--teal  bubble--xl b6">Micro-interview<br />5 min</div>
+          <div class="bubble bubble--red   bubble--sm b7">Slider</div>
+          <div class="bubble bubble--brown bubble--md b8">Stop / Continue<br />Start</div>
+          <div class="bubble bubble--light bubble--sm b9">Gamification</div>
+          <div class="bubble bubble--cream bubble--md b10">Résumé IA<br />public</div>
+        </div>
       </div>
     </section>
+
   </main>
 
   <footer class="footer">
