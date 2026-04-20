@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pipecat — étude de cas</title>
+  <meta name="description" content="Pipecat : framework open source pour agents vocaux temps réel." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../../assets/css/style.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <a class="back" href="index.html">← Études de cas</a>
+      <p class="eyebrow" style="margin-top: 32px;">Étude de cas · 06</p>
+      <h1>Pipecat</h1>
+      <p class="lead">Framework open source Python pour construire des agents vocaux temps réel.</p>
+      <div class="case-meta">
+        <span class="case-meta__item"><strong>Éditeur</strong>Daily.co</span>
+        <span class="case-meta__item"><strong>Origine</strong>San Francisco, États-Unis</span>
+        <span class="case-meta__item"><strong>Modèle</strong>Open source · BSD 2-Clause</span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <span class="section__num">01 — problème résolu</span>
+        <h2>Construire un agent vocal sans recâbler STT + LLM + TTS à chaque fois</h2>
+        <p class="section__intro">
+          Pipecat n'est pas un produit de collecte clé en main : c'est la brique technique
+          pour construire le sien. Il orchestre speech-to-text, LLM, text-to-speech et transport
+          temps réel (WebRTC) dans un pipeline unique, à faible latence.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <span class="section__num">02 — comment ça marche</span>
+        <h2>Un pipeline modulaire, 40+ services branchables</h2>
+        <p class="section__intro">
+          On assemble en Python (ou JavaScript / React / iOS / Android / C++) un pipeline :
+          entrée audio → STT → LLM → TTS → sortie. Chaque bloc est un plugin — OpenAI, Anthropic,
+          Deepgram, ElevenLabs, Cartesia, AWS, etc. Le framework gère les interruptions, les
+          tours de parole, le multimodal.
+        </p>
+        <div class="fact">
+          <p>
+            <strong>Outils associés</strong> — Voice UI Kit (composants front),
+            Whisker (debugger temps réel), Tail (dashboard terminal). Déploiement possible sur
+            Pipecat Cloud (géré par Daily) ou en self-host.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <span class="section__num">03 — captures d'écran</span>
+        <h2>Interface</h2>
+        <p class="section__intro">Placeholders — captures à prendre depuis pipecat.ai et github.com/pipecat-ai.</p>
+        <div class="shots">
+          <figure class="shot">
+            <div class="shot__placeholder">code · pipeline Python</div>
+            <figcaption>Déclaration d'un pipeline STT → LLM → TTS.</figcaption>
+          </figure>
+          <figure class="shot">
+            <div class="shot__placeholder">whisker · debugger live</div>
+            <figcaption>Whisker, debugger temps réel.</figcaption>
+          </figure>
+          <figure class="shot">
+            <div class="shot__placeholder">voice UI kit · démo</div>
+            <figcaption>Démo avec Voice UI Kit.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <span class="section__num">04 — pour / contre</span>
+        <h2>Lecture objective</h2>
+        <div class="case-cols">
+          <div class="case-col case-col--pro">
+            <h3>Pour</h3>
+            <ul>
+              <li>Open source (BSD 2-Clause), self-host possible.</li>
+              <li>Contrôle total : choix des modèles, des voix, de l'infra.</li>
+              <li>40+ services IA branchables en plugins.</li>
+              <li>SDKs multi-plateformes (Python, JS, React, iOS, Android, C++).</li>
+              <li>Outils de dev dédiés (Voice UI Kit, Whisker, Tail).</li>
+            </ul>
+          </div>
+          <div class="case-col case-col--con">
+            <h3>Contre</h3>
+            <ul>
+              <li>Ce n'est pas un produit utilisateur : il faut développer.</li>
+              <li>Aucune analyse ni UI de résultats incluse.</li>
+              <li>Coûts cachés : facturation à l'usage des services tiers (STT, LLM, TTS).</li>
+              <li>Courbe d'apprentissage réelle pour un profil non-dev.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <span class="section__num">05 — prix</span>
+        <h2>Tarification publique</h2>
+        <div class="fact">
+          <p>
+            <strong>Framework</strong> — gratuit, open source. <strong>Pipecat Cloud</strong> —
+            hébergement managé par Daily.co, tarification à l'usage. Les services IA branchés
+            (STT, LLM, TTS) sont facturés séparément par leurs fournisseurs respectifs.
+          </p>
+        </div>
+        <a class="source-link" href="https://github.com/pipecat-ai/pipecat" target="_blank" rel="noopener">Voir le dépôt GitHub →</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Source : pipecat.ai · <a href="index.html">retour aux études</a></p>
+    </div>
+  </footer>
+</body>
+</html>
