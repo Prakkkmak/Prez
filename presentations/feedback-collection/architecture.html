@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Architecture de la solution — collecte de feedback</title>
+  <meta name="description" content="Trois volets pour transformer le retour terrain en décision : contextualiser, capter, consolider." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/style.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <a class="back" href="index.html">← Feedback collection</a>
+      <p class="eyebrow" style="margin-top: 32px;">Proposition · Architecture</p>
+      <h1>Architecture<br />de la solution</h1>
+      <p class="lead">Trois volets pour transformer le retour terrain en décision : contextualiser, capter, consolider.</p>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ========== 01 — Vue d'ensemble ========== -->
+    <section class="section">
+      <div class="container">
+        <span class="section__num">vue d'ensemble</span>
+        <h2>Un pipeline en trois volets</h2>
+        <p class="section__intro">Chaque volet répond à un problème que le marché actuel traite mal. Ensemble, ils forment une chaîne cohérente, du cadrage au rapport partageable.</p>
+
+        <div class="flow">
+          <article class="flow__step">
+            <span class="flow__num">1</span>
+            <h3 class="flow__title">Contextualisation</h3>
+            <p class="flow__desc">Cadrer le feedback et composer les questions dans l'ordre, comme un formulaire — mais personnalisable par destinataire.</p>
+            <button class="demo-btn" data-demo="contextualisation">Démo</button>
+          </article>
+          <article class="flow__step">
+            <span class="flow__num">2</span>
+            <h3 class="flow__title">Captation qualitative</h3>
+            <p class="flow__desc">Un agent conversationnel pose les questions, challenge les réponses vagues, approfondit quand il manque une info.</p>
+            <button class="demo-btn demo-btn--brown" data-demo="captation">Démo</button>
+          </article>
+          <article class="flow__step">
+            <span class="flow__num">3</span>
+            <h3 class="flow__title">Consolidation</h3>
+            <p class="flow__desc">Synthèse automatique : verbatims marquants, résumé exécutif, axes priorisés. Partageable par mail.</p>
+            <button class="demo-btn demo-btn--teal" data-demo="consolidation">Démo</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 02 — Contextualisation ========== -->
+    <section class="section">
+      <div class="container">
+        <span class="section__num">01 — contextualisation</span>
+        <h2>Cadrer avant de capter</h2>
+        <p class="section__intro">Le parcours se conçoit à la manière d'un Google Forms : on pose d'abord le contexte, puis on aligne les retours souhaités sous forme de phrases courtes.</p>
+
+        <div class="volet">
+          <div class="volet__body">
+            <p>On commence par écrire le contexte du feedback en langage naturel — l'événement, l'objectif, ce qu'on cherche à comprendre. C'est ce bloc qui oriente tout le reste du parcours.</p>
+            <p>On ajoute ensuite les retours souhaités, une phrase par question. Le comportement reste prédictible : l'ordre est respecté, rien ne dérape.</p>
+            <p>La captation est personnalisée à chaque destinataire : prénom, rôle, mission. L'agent génère une introduction adaptée qui augmente le taux de réponse sans réécrire le parcours à chaque fois.</p>
+            <button class="demo-btn" data-demo="contextualisation">Voir l'IHM de cadrage</button>
+          </div>
+          <aside class="volet__aside">
+            <strong>Exemple de contexte</strong>
+            « Le feedback concerne FinTech Days, un événement du 12 avril. Intervenants et participants — venus de la finance et de la tech — sont interrogés sur l'accueil, les keynotes et la qualité des échanges. »
+            <em>Trois minutes pour cadrer un parcours qui sera réutilisé des centaines de fois.</em>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 03 — Captation qualitative ========== -->
+    <section class="section">
+      <div class="container">
+        <span class="section__num">02 — captation qualitative</span>
+        <h2>Un agent qui relance</h2>
+        <p class="section__intro">Le canal de captation n'est pas un formulaire à remplir : c'est une conversation courte, où l'agent pose une question, écoute la réponse, et décide s'il doit relancer ou passer à la suivante.</p>
+
+        <div class="volet">
+          <div class="volet__body">
+            <p>L'agent pose la question. L'utilisateur répond. L'agent confronte la réponse à ce qu'il cherche vraiment : si c'est suffisamment précis, il stocke et avance ; si c'est flou, il relance avec une question d'approfondissement.</p>
+            <p>Le principe est simple : ne jamais accepter un « ça allait » quand on cherche à comprendre <em>pourquoi</em>. L'agent creuse jusqu'au verbatim utile, puis s'arrête.</p>
+            <p>Les réponses jugées pertinentes sont conservées telles quelles, mot pour mot. Le reste sert de contexte conversationnel, mais ne pollue pas la synthèse finale.</p>
+            <button class="demo-btn demo-btn--brown" data-demo="captation">Voir une conversation</button>
+          </div>
+          <aside class="volet__aside">
+            <strong>Principe de relance</strong>
+            « Quand tu dis <em>longtemps</em>, tu parles de combien de temps à peu près ? »
+            <em>L'agent challenge la réponse à ce qu'il recherche, et ne stocke que les morceaux qui répondent vraiment.</em>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 04 — Consolidation ========== -->
+    <section class="section">
+      <div class="container">
+        <span class="section__num">03 — consolidation</span>
+        <h2>Du bruit au rapport</h2>
+        <p class="section__intro">Une fois la captation terminée, on passe du verbatim brut à un mini-rapport actionnable : résumé, citations qui comptent, axes d'amélioration priorisés.</p>
+
+        <div class="volet">
+          <div class="volet__body">
+            <p>La consolidation agrège les réponses de tous les répondants, extrait les verbatims les plus forts, et en tire un résumé exécutif. L'idée n'est pas de tout restituer, mais de faire remonter ce qui compte.</p>
+            <p>Le rapport est pensé pour être lu en cinq minutes et partagé par mail ou export PDF — le format standard de circulation en organisation.</p>
+            <p>On garde la traçabilité : chaque verbatim reste attribué à son auteur, chaque axe reste sourçable jusqu'à la conversation d'origine.</p>
+            <button class="demo-btn demo-btn--teal" data-demo="consolidation">Voir un rapport type</button>
+          </div>
+          <aside class="volet__aside">
+            <strong>Sortie attendue</strong>
+            Un rapport court, lisible, avec verbatims marquants, résumé exécutif et axes classés par récurrence.
+            <em>Partageable par mail ou téléchargeable — la décision se prend sur cette vue.</em>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 05 — Synthèse ========== -->
+    <section class="section">
+      <div class="container">
+        <span class="section__num">synthèse</span>
+        <h2>Ce que chaque volet apporte</h2>
+        <p class="section__intro">Lu de gauche à droite, le pipeline résout les trois écueils identifiés dans l'analyse : cadrage, engagement, restitution.</p>
+
+        <div class="benefits">
+          <article class="benefit">
+            <p class="benefit__label">Volet 1 · cadrage</p>
+            <h3 class="benefit__title">Prédictibilité</h3>
+            <p class="benefit__desc">Le parcours est écrit une fois, réutilisé cent fois. Chaque nouveau destinataire hérite d'un cadre testé, avec une personnalisation automatique de l'invitation.</p>
+          </article>
+          <article class="benefit">
+            <p class="benefit__label">Volet 2 · captation</p>
+            <h3 class="benefit__title">Profondeur</h3>
+            <p class="benefit__desc">L'agent relance quand la réponse est vague. On récupère des verbatims exploitables plutôt que des notes sur cinq ou des cases cochées.</p>
+          </article>
+          <article class="benefit">
+            <p class="benefit__label">Volet 3 · consolidation</p>
+            <h3 class="benefit__title">Décidabilité</h3>
+            <p class="benefit__desc">Le rapport est lisible en cinq minutes et partageable tel quel. Il transforme des dizaines de conversations en une décision concrète.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================== -->
+  <!-- ==================== MODALS ============================== -->
+  <!-- ========================================================== -->
+
+  <!-- Démo 1 — Contextualisation -->
+  <div class="modal" id="modal-contextualisation" role="dialog" aria-modal="true" aria-labelledby="modal-ctx-title">
+    <div class="modal__dialog">
+      <button class="modal__close" aria-label="Fermer">×</button>
+      <p class="modal__eyebrow">Démo · Contextualisation</p>
+      <h2 class="modal__title" id="modal-ctx-title">Composer le parcours de feedback</h2>
+      <p class="modal__lead">Cadre le contexte, liste les retours souhaités, personnalise l'envoi. Le bouton « Générer » produit une introduction adaptée au destinataire.</p>
+
+      <div class="builder">
+        <div class="builder__field">
+          <label class="builder__label">Contexte du feedback</label>
+          <textarea>Le feedback concerne FinTech Days, un événement du 12 avril réunissant des intervenants et des participants issus de la finance et de la tech. On interroge sur l'accueil, les keynotes et la qualité des échanges.</textarea>
+        </div>
+
+        <div class="builder__field">
+          <label class="builder__label">Retours souhaités</label>
+          <ul class="builder__q-list">
+            <li class="builder__q">Comment s'est passé l'accueil et le check-in ?</li>
+            <li class="builder__q">Quelles keynotes t'ont apporté le plus de valeur ?</li>
+            <li class="builder__q">Quelle est la qualité des échanges avec les autres participants ?</li>
+            <li class="builder__q">Quels axes sont améliorables pour la prochaine édition ?</li>
+          </ul>
+          <button class="builder__q-add" type="button">+ Ajouter une question</button>
+        </div>
+
+        <div class="builder__persona">
+          <label class="builder__label">Destinataire</label>
+          <div class="builder__persona-head">
+            <span class="builder__avatar">M</span>
+            <div>
+              <div class="builder__persona-name">Mathieu, 42 ans</div>
+              <p class="builder__persona-desc">CTO d'une néobanque, intervenant sur le panel « Paiements & IA ».</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="builder__actions">
+          <button class="builder__generate" id="builder-generate" type="button">Générer le feedback agent</button>
+        </div>
+
+        <div class="builder__preview" id="builder-preview">
+          <strong>Message généré</strong><span id="builder-preview-text"></span><span class="builder__caret" id="builder-caret" hidden></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Démo 2 — Captation -->
+  <div class="modal" id="modal-captation" role="dialog" aria-modal="true" aria-labelledby="modal-cap-title">
+    <div class="modal__dialog">
+      <button class="modal__close" aria-label="Fermer">×</button>
+      <p class="modal__eyebrow">Démo · Captation qualitative</p>
+      <h2 class="modal__title" id="modal-cap-title">Une conversation qui relance</h2>
+      <p class="modal__lead">L'agent pose une question, challenge les réponses trop vagues, et n'avance que lorsqu'il a l'information qu'il cherche.</p>
+
+      <div class="chat">
+        <div class="chat__header">
+          <span class="chat__avatar">A</span>
+          <div>
+            <div class="chat__who">Agent feedback</div>
+          </div>
+          <span class="chat__status">En ligne</span>
+        </div>
+        <div class="chat__body" id="chat-body"></div>
+        <div class="chat__footer">
+          <span class="chat__progress" id="chat-progress">Lecture automatique…</span>
+          <button class="chat__replay" id="chat-replay" type="button">Rejouer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Démo 3 — Consolidation -->
+  <div class="modal" id="modal-consolidation" role="dialog" aria-modal="true" aria-labelledby="modal-cons-title">
+    <div class="modal__dialog">
+      <button class="modal__close" aria-label="Fermer">×</button>
+      <p class="modal__eyebrow">Démo · Consolidation</p>
+      <h2 class="modal__title" id="modal-cons-title">Le rapport partageable</h2>
+      <p class="modal__lead">Synthèse automatique des conversations : résumé, verbatims marquants, axes d'amélioration priorisés.</p>
+
+      <div class="report">
+        <div class="report__head">
+          <div class="report__head-left">
+            <h3>FinTech Days — édition du 12 avril</h3>
+            <p>Rapport généré le 22 avril · sources : 34 conversations (intervenants &amp; participants)</p>
+          </div>
+          <div class="report__stats">
+            <div class="report__stat">
+              <span class="report__stat-val">34</span>
+              <span class="report__stat-lbl">Répondants</span>
+            </div>
+            <div class="report__stat">
+              <span class="report__stat-val">87 %</span>
+              <span class="report__stat-lbl">Complétion</span>
+            </div>
+            <div class="report__stat">
+              <span class="report__stat-val">4,2</span>
+              <span class="report__stat-lbl">Min / conv.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="report__sec">
+          <h4 class="report__sec-title">Résumé exécutif</h4>
+          <ul class="report__summary">
+            <li>L'accueil participants est fluide ; côté intervenants, l'onboarding backstage (run-of-show, briefing technique) reste la principale source de friction.</li>
+            <li>Les keynotes concrètes et chiffrées (Revolut sur les paiements instantanés, Qonto sur l'infra) sont largement plébiscitées face aux interventions trop corporate.</li>
+            <li>La qualité des échanges en off est le premier motif de satisfaction — rendez-vous business générés, introductions utiles, mise en relation investisseurs/fondateurs.</li>
+            <li>Trois points reviennent : communication du programme en amont, densité de l'agenda, signalétique des salles de breakout.</li>
+          </ul>
+        </div>
+
+        <div class="report__sec">
+          <h4 class="report__sec-title">Verbatims marquants</h4>
+          <div class="report__verbatims">
+            <figure class="report__verbatim">
+              <blockquote>« J'ai appris mon créneau exact trente minutes avant de monter sur scène. Le run-of-show doit circuler plus tôt. »</blockquote>
+              <cite>Mathieu · CTO, néobanque</cite>
+            </figure>
+            <figure class="report__verbatim">
+              <blockquote>« La keynote Revolut sur les rails de paiement instantané était très concrète, avec des chiffres à jour. C'est ce qu'on vient chercher. »</blockquote>
+              <cite>Élise · Head of Product, scale-up paiement</cite>
+            </figure>
+            <figure class="report__verbatim">
+              <blockquote>« Trois rendez-vous business bookés le soir même. C'est le meilleur ROI networking que j'ai fait cette année. »</blockquote>
+              <cite>Karim · Fondateur, AssurTech</cite>
+            </figure>
+            <figure class="report__verbatim">
+              <blockquote>« Les salles de breakout n'étaient pas signalées. J'ai raté la moitié d'une session en cherchant la bonne porte. »</blockquote>
+              <cite>Soraya · VC, fonds early-stage</cite>
+            </figure>
+          </div>
+        </div>
+
+        <div class="report__sec">
+          <h4 class="report__sec-title">Axes d'amélioration priorisés</h4>
+          <div class="report__axes">
+            <div class="report__axis">
+              <span class="report__axis-rank">1</span>
+              <span class="report__axis-text">Envoyer le run-of-show détaillé aux intervenants au moins J-3, avec créneaux précis et contact technique.</span>
+              <span class="report__axis-tag">cité 19×</span>
+            </div>
+            <div class="report__axis">
+              <span class="report__axis-rank">2</span>
+              <span class="report__axis-text">Améliorer la signalétique des salles de breakout et afficher l'agenda en temps réel sur écrans dynamiques.</span>
+              <span class="report__axis-tag">cité 15×</span>
+            </div>
+            <div class="report__axis">
+              <span class="report__axis-rank">3</span>
+              <span class="report__axis-text">Privilégier les keynotes avec cas d'usage chiffrés et retours d'expérience concrets, au détriment des formats corporate.</span>
+              <span class="report__axis-tag">cité 12×</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="report__actions">
+          <button class="report__btn" type="button">✉ Partager par mail</button>
+          <button class="report__btn report__btn--ghost" type="button">↓ Télécharger le PDF</button>
+          <button class="report__btn report__btn--ghost" type="button">↗ Ouvrir le détail</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Prez · <a href="../../index.html">retour à l'accueil</a></p>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      'use strict';
+
+      // ---------- Modals ----------
+      var triggers = document.querySelectorAll('[data-demo]');
+      var modals = document.querySelectorAll('.modal');
+      var openModal = null;
+
+      function open(id) {
+        var el = document.getElementById('modal-' + id);
+        if (!el) return;
+        el.setAttribute('data-open', '');
+        document.body.classList.add('modal-open');
+        openModal = el;
+        if (id === 'captation') startChat();
+        if (id === 'contextualisation') resetBuilder();
+      }
+      function close() {
+        if (!openModal) return;
+        openModal.removeAttribute('data-open');
+        document.body.classList.remove('modal-open');
+        openModal = null;
+        stopChat();
+      }
+
+      triggers.forEach(function (t) {
+        t.addEventListener('click', function () {
+          open(t.getAttribute('data-demo'));
+        });
+      });
+      modals.forEach(function (m) {
+        m.addEventListener('click', function (e) {
+          if (e.target === m) close();
+        });
+        var btn = m.querySelector('.modal__close');
+        if (btn) btn.addEventListener('click', close);
+      });
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') close();
+      });
+
+      // ---------- Démo 1 — Builder (typing preview) ----------
+      var builderGen = document.getElementById('builder-generate');
+      var builderPreview = document.getElementById('builder-preview');
+      var builderText = document.getElementById('builder-preview-text');
+      var builderCaret = document.getElementById('builder-caret');
+      var builderTimer = null;
+      var builderMessage =
+        "Bonjour Mathieu, merci encore pour ton intervention sur le panel « Paiements & IA » aux FinTech Days. " +
+        "J'aimerais prendre trois minutes pour recueillir ton retour à chaud : " +
+        "comment s'est passé l'accueil côté intervenants, ce que tu as retenu des autres keynotes, " +
+        "et les échanges que tu as pu avoir en off avec les participants. " +
+        "Pas de case à cocher, juste une petite conversation — à ton rythme.";
+
+      function resetBuilder() {
+        if (builderTimer) { clearInterval(builderTimer); builderTimer = null; }
+        builderPreview.removeAttribute('data-visible');
+        builderText.textContent = '';
+        builderCaret.hidden = true;
+      }
+      function typeBuilder() {
+        resetBuilder();
+        builderPreview.setAttribute('data-visible', '');
+        builderCaret.hidden = false;
+        var i = 0;
+        builderTimer = setInterval(function () {
+          builderText.textContent = builderMessage.slice(0, i);
+          i += 2;
+          if (i > builderMessage.length) {
+            builderText.textContent = builderMessage;
+            clearInterval(builderTimer);
+            builderTimer = null;
+            setTimeout(function () { builderCaret.hidden = true; }, 800);
+          }
+        }, 18);
+      }
+      if (builderGen) builderGen.addEventListener('click', typeBuilder);
+
+      // ---------- Démo 2 — Chat auto-play ----------
+      var chatBody = document.getElementById('chat-body');
+      var chatProgress = document.getElementById('chat-progress');
+      var chatReplay = document.getElementById('chat-replay');
+      var chatTimers = [];
+      var chatScript = [
+        { who: 'agent', text: "Bonjour Mathieu, merci d'avoir accepté ces quelques minutes. Comment s'est passé l'accueil côté intervenants aux FinTech Days ?" },
+        { who: 'user',  text: "Correct, mais l'onboarding backstage manquait un peu de clarté." },
+        { who: 'note',  text: "Réponse vague — l'agent relance" },
+        { who: 'agent', text: "Quand tu parles de manque de clarté, tu penses à quoi précisément : le run-of-show, le matériel, l'équipe technique ?" },
+        { who: 'user',  text: "Surtout le run-of-show. J'ai appris mon créneau exact trente minutes avant de monter sur scène." },
+        { who: 'agent', text: "Noté. Et sur le contenu : quelle keynote t'a apporté le plus de valeur ?" },
+        { who: 'user',  text: "Celle de Revolut sur les rails de paiement instantané. Très concrète, avec des chiffres à jour." },
+        { who: 'note',  text: "Verbatim exploitable — l'agent avance" },
+        { who: 'agent', text: "Super. Dernière chose : la qualité des échanges en off avec les participants, tu la notes comment ?" },
+        { who: 'user',  text: "Excellente. J'ai eu trois rendez-vous business bookés le soir même, ça vaut le déplacement." },
+        { who: 'agent', text: "Parfait, c'est consigné. Merci Mathieu, ton retour est précieux pour la prochaine édition." }
+      ];
+
+      function clearChatTimers() {
+        chatTimers.forEach(function (t) { clearTimeout(t); });
+        chatTimers = [];
+      }
+      function stopChat() {
+        clearChatTimers();
+      }
+      function appendMsg(msg) {
+        var el;
+        if (msg.who === 'note') {
+          el = document.createElement('div');
+          el.className = 'chat__msg chat__msg--note';
+          el.textContent = '• ' + msg.text;
+        } else {
+          el = document.createElement('div');
+          el.className = 'chat__msg chat__msg--' + msg.who;
+          el.textContent = msg.text;
+        }
+        chatBody.appendChild(el);
+        chatBody.scrollTop = chatBody.scrollHeight;
+      }
+      function showTyping() {
+        var el = document.createElement('div');
+        el.className = 'chat__typing';
+        el.innerHTML = '<span></span><span></span><span></span>';
+        el.id = 'chat-typing-tmp';
+        chatBody.appendChild(el);
+        chatBody.scrollTop = chatBody.scrollHeight;
+      }
+      function removeTyping() {
+        var t = document.getElementById('chat-typing-tmp');
+        if (t) t.remove();
+      }
+      function startChat() {
+        clearChatTimers();
+        chatBody.innerHTML = '';
+        chatProgress.textContent = 'Lecture automatique…';
+
+        var delay = 400;
+        chatScript.forEach(function (msg, idx) {
+          if (msg.who === 'note') {
+            chatTimers.push(setTimeout(function () { appendMsg(msg); }, delay));
+            delay += 700;
+            return;
+          }
+          var typingMs = msg.who === 'agent' ? 1000 : 650;
+          chatTimers.push(setTimeout(function () { showTyping(); }, delay));
+          delay += typingMs;
+          chatTimers.push(setTimeout(function () {
+            removeTyping();
+            appendMsg(msg);
+            if (idx === chatScript.length - 1) {
+              chatProgress.textContent = 'Conversation terminée · ' + chatScript.filter(function (m) { return m.who !== 'note'; }).length + ' échanges';
+            }
+          }, delay));
+          delay += Math.max(600, msg.text.length * 20);
+        });
+      }
+      if (chatReplay) chatReplay.addEventListener('click', startChat);
+
+    })();
+  </script>
+</body>
+</html>
